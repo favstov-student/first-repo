@@ -3,56 +3,93 @@
   <head>
     <meta charset="UTF-8">
     <title>Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&family=Roboto&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <img src="./images/Background.jpg" />
-      <div>
-        <span>Escape.</span>
-        <nav>
-          <a>HOME</a>
-          <a>CATEGORIES</a>
-          <a>ABOUT</a>
-          <a>CONTACT</a>
+    <header class="header">
+      <div class="nav__block">
+        <span class="logo">Escape.</span>
+        <nav class="nav__links">
+          <a class="nav__link" href="#">HOME</a>
+          <a class="nav__link" href="#">CATEGORIES</a>
+          <a class="nav__link" href="#">ABOUT</a>
+          <a class="nav__link" href="#">CONTACT</a>
         </nav>
       </div>
-      <h1>Let's do it together.</h1>
-      <p>We travel the world in search of stories. Come along for the ride.</p>
-      <button>View Latest Posts</button>  
+      <h1 class="title">Let's do it together.</h1>
+      <p class="title__description">We travel the world in search of stories. Come along for the ride.</p>
+      <div class="container__buttons">
+        <button class="button__header">View Latest Posts</button> 
+      </div>   
     </header>
 
-    <nav>
-      <a>Nature</a>
-      <a>Photography</a>
-      <a>Relaxation</a>
-      <a>Vacation</a>
-      <a>Travel</a>
-      <a>Adventure</a>
+    <nav class="categories">
+      <a class="categories__link" href="#">Nature</a>
+      <a class="categories__link" href="#">Photography</a>
+      <a class="categories__link" href="#">Relaxation</a>
+      <a class="categories__link" href="#">Vacation</a>
+      <a class="categories__link" href="#">Travel</a>
+      <a class="categories__link" href="#">Adventure</a>
     </nav>
 
-    <section>
-      <h2>Featured Posts</h2>
-      <div>
-        <p>The Road Ahead</p>
-        <p>The road ahead might be paved - it might not be.</p>
-          <div>
-            <img src="./images/MatVogels.jpg" />
-            <span>Mat Vogels</span>
-            <span>September 25, 2015</span>
+    <section class="section_featured">
+      <h2 class="section__title">Featured Posts</h2>
+      <div class="container__featured">
+        <div class="featured_left">
+          <p class="post__title">The Road Ahead</p>
+          <p class="post__description">The road ahead might be paved - it might not be.</p>
+          <div class="signature">
+            <div class="signature__author">
+              <img class="author__face" src="./images/MatVogels.png" />
+              <p class="author__name">Mat Vogels</p>
+            </div>
+            <p class="signature__date">September 25, 2015</p>
           </div>
-      </div>
-      <div>
-        <span>ADVENTURE</span>
-        <p>From Top Down</p>
-        <p>Once a year, go someplace you’ve never been before.</p>
-          <div>
-            <img src="./images/WilliamWong.jpg" />
-            <span>William Wong</span>
-            <span>September 25, 2015</span>
+        </div>
+        <div class="featured_right">
+          <span class="category">ADVENTURE</span>
+          <p class="post__title">From Top Down</p>
+          <p class="post__description">Once a year, go someplace you’ve never been before.</p>
+          <div class="signature">
+            <div class="signature__author">
+              <img class="author__face" src="./images/WilliamWong.png" />
+              <p class="author__name">William Wong</p>
+            </div>
+            <p class="signature__date">September 25, 2015</p>
           </div>
+        </div>
       </div>
-    </section>
 
+    <section class="section_recent">
+      <h2 class="section__title">Most Recent</h2>
+      <div class="container__recent">
+        <div class="card">
+          
+          <div class="card__picture"></div>
+
+          <div class="card__text">
+            <p class="card__text_title">Still Standing Tall</p>
+            <p class="card__text_description">Life begins at the end of your comfort zone.</p>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="signature_color">
+            <div class="signature__author">
+              <img class="author__face" src="./images/WilliamWong.png" />
+              <p class="author__name_color">WilliamWong</p>
+            </div>
+            <p class="signature__date_color">9/25/2015</p>
+          </div>
+
+        </div>
+      </div>
+    </section>  
+    
+<!--
     <section>
       <p>Most Recent</p>
       <div>
@@ -129,5 +166,7 @@
         </nav>
       </div>
     </footer>
+
+    -->
   </body>
 </html>
