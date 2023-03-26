@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.the-road-ahead, .header {
+  max-width: 1440px;
+  background-color: #E5E5E5;
+}
+
+.nav__block {
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 250px;
+  padding-right: 270px;
+  padding-top: 20px;
+}
+
+.logo {
+  font: 400 26px/26px "Lora", serif;
+  color: #2E2E2E;
+}
+
+.nav__links {
+  font: 400 12px/20px "Oxygen", sans-serif;
+  color: #2E2E2E;
+  display: flex;
+  align-items: baseline;
+  column-gap: 40px;
+}
+
+.nav__link:link,
+.nav__link:visited
+{
+  color: #2E2E2E;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #2E2E2E;
+  text-decoration: underline;
+}
+
+.title {
+  font: 400 50px/51px "Lora", serif;
+  color: #2E2E2E;
+  text-align: center;
+  padding-top: 82px;
+}
+
+.title__description {
+  font: 400 17px/20px "Lora", serif;
+  color: rgba(46, 46, 46, 0.63);
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 113px;
+}
+
+.main-picture {
+  height: 534px;
+  max-width: 1440px;
+  background-image: url("../images/TheRoadAheadBig.jpg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.content {
+  font: 400 24px/35px "Oxygen", sans-serif;
+  color: #101315;
+  padding: 140px 240px 135px 240px;
+}
+
+.paragraph {
+  padding-bottom: 35px;
+}
+
+.footer {
+  height: 500px;
+  max-width: 1440px;
+  background-image: url("../images/FooterBackground.jpg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.section__title_color {
+  font: 400 20px/27px "Oxygen", sans-serif;
+  color: #EFEFEF;
+  text-align: center;
+  padding-top: 81px;
+  padding-bottom: 38px;
+}
+
+.section__title_color:after {
+  content: "";
+  display: block;
+  width: 188px;
+  height: 1px;
+  margin: 17px auto 0;
+  background-color: #DEDEDE;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+.text__email {
+  height: 50px;
+  width: 375px;
+  background-color: #FFFFFF;
+  font: 400 12px/14px "Roboto", sans-serif;
+  padding-left: 35px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-width: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.button__submit {
+  height: 50px;
+  width: 125px;
+  font: 400 12px/14px "Roboto", sans-serif;
+  color: #F8F8F8;
+  border-width: 0;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+.nav__block_bottom {
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 250px;
+  padding-right: 270px;
+  padding-top: 20px;
+  background-color: rgba(35, 47, 56, 0.6);
+}
+
+.logo_color {
+  color: #FFFFFF;
+}
+
+.nav__link_color:link,
+.nav__link_color:visited
+{
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.nav__link_color:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}

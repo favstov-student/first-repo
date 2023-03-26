@@ -16,6 +16,7 @@
     height: 74px;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding-left: 250px;
     padding-right: 270px;
     padding-top: 20px;
@@ -117,6 +118,15 @@
     padding-bottom: 40px;
 }
 
+.section__title:after {
+    content: "";
+    display: block;
+    width: 188px;
+    height: 1px;
+    margin: 16px auto 0;
+    background-color: #DEDEDE;
+}
+
 .container__featured {
     display: flex;
     justify-content: center;
@@ -187,17 +197,54 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.container_recent {
-    display: flex;
+.section_recent {
+    background-color: #F7F7F7;
+    max-width: 1440px;
+    padding-bottom: 108px;
+}
+
+.container__recent {
+    max-width: 1440px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 296px 296px 296px;
+    column-gap: 24px;
+    row-gap: 25px;
+    align-items: stretch;
 }
 
 .card {
     width: 296px;
+    display: grid;
+    grid-template-rows: 150px auto 1px 48px;
 }
 
 .card__picture {
-    height: 150px;
+    max-height: 150px;
+}
+
+.card_top-left {
     background-image: url("../images/StillStandingTall.jpg");
+}
+
+.card_top-center {
+    background-image: url("../images/SunnySideUp.jpg");
+}
+
+.card_top-right {
+    background-image: url("../images/WaterFalls.jpg");
+}
+
+.card_bottom-left {
+    background-image: url("../images/ThroughTheMist.jpg");
+}
+
+.card_bottom-center {
+    background-image: url("../images/AwakenEarly.jpg");
+}
+
+.card_bottom-right {
+    background-image: url("../images/TryItAlways.jpg");
 }
 
 .card__text {
@@ -216,25 +263,108 @@
     font: 400 13px/19px "Oxygen", sans-serif;
     color: #7A7A7A;
     padding-top: 6px;
+    padding-bottom: 12px;
 }
 
 .separator {
-    height: 1px;
+    max-height: 1px;
     width: 100%;
     background-color: #EFEFEF;
 }
 
 .signature_color {
     background-color: #FCFCFC;
-    height: 48px;
+    max-height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 13px;
 }
 
 .author__name_color {
     font: 400 12px/35px "Oxygen", sans-serif;
-    color: #999999; 
+    color: #999999;
+    margin-left: 10px; 
 }
 
 .signature__date_color {
     font: 400 12px/35px "Oxygen", sans-serif;
     color: #999999;
+}
+
+.footer {
+    height: 500px;
+    max-width: 1440px;
+    background-image: url("../images/FooterBackground.jpg");
+    background-origin: border-box;
+    background-repeat: no-repeat;
+}
+
+.section__title_color {
+    font: 400 20px/27px "Oxygen", sans-serif;
+    color: #EFEFEF;
+    text-align: center;
+    padding-top: 81px;
+    padding-bottom: 38px;
+}
+
+.section__title_color:after {
+    content: "";
+    display: block;
+    width: 188px;
+    height: 1px;
+    margin: 17px auto 0;
+    background-color: #DEDEDE;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90px;
+}
+
+.text__email {
+    height: 50px;
+    width: 375px;
+    background-color: #FFFFFF;
+    font: 400 12px/14px "Roboto", sans-serif;
+    padding-left: 35px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-width: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.button__submit {
+    height: 50px;
+    width: 125px;
+    font: 400 12px/14px "Roboto", sans-serif;
+    color: #F8F8F8;
+    border-width: 0;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(255, 255, 255, 0.28);
+}
+
+.nav__block_bottom {
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 250px;
+    padding-right: 270px;
+    padding-top: 20px;
+    background-color: rgba(35, 47, 56, 0.6);
+}
+
+.nav__link_color:link,
+.nav__link_color:visited
+{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.nav__link_color:hover {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
 }
