@@ -137,6 +137,7 @@
     width: 460px;
     height: 280px;
     background-image: url("../images/TheRoadAhead.jpg");
+    position: relative;
 }
 
 .featured_right {
@@ -148,13 +149,20 @@
 
 .category {
     position: absolute;
-    content: "";
     left: 29px;
     top: 26px;
     font: 400 12px/13px "Oxygen", sans-serif;
     padding: 6px 9px 7px 9px;
     color: #FFFFFF;
     background-color: #DD783F;
+}
+
+.show {
+    display: block;
+}
+
+.no-show {
+    display: none;
 }
 
 .post__title {
