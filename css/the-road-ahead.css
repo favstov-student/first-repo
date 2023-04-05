@@ -59,14 +59,6 @@
   padding-bottom: 113px;
 }
 
-.main-picture {
-  height: 534px;
-  max-width: 1440px;
-  background-image: url("../images/TheRoadAheadBig.jpg");
-  background-origin: border-box;
-  background-repeat: no-repeat;
-}
-
 .content {
   font: 400 24px/35px "Oxygen", sans-serif;
   color: #101315;
